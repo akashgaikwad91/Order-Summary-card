@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      bottom: 0px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 50%;
+      background-color: hsl(225, 100%, 94%);
+    }
+
+    .card-container {
+      background-color: white;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 44vh;
+      height: 65vh;
+    }
+
+    .card-img {
+      border-radius: 20px 20px 0px 0px;
+      box-shadow: 0px 10px 20px 0px hsl(245deg 75% 52% / 18%);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container-details {
+      display: flex;
+      flex-direction: column;
+      margin: 24px;
+    }
+
+    .price-details {
+      display: flex;
+      flex-direction: row;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      padding: 14px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 8px;
+    }
+
+    .order-name {
+      font-family: 'Red Hat Display', sans-serif;
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-bottom: 14px;
+    }
+
+    .order-details {
+      font-size: 12px;
+      opacity: 0.75;
+      font-family: 'Red Hat Display', sans-serif;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .icon-music{
+      height: 35px;
+      width: 35px;
+      padding-right: 12px;
+    }
+    .price-card{
+      display: flex;
+      flex-direction: column;
+    }
+    .Annual-Plan{
+      margin: 0px;
+    }
+    .price{
+      font-size: 15px;
+      opacity: 0.70;
+    }
+    .price-container{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .changes-container{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .Change{
+      padding-top: 6px;
+    }
+    .payment-btn{
+      border-radius: 5px;
+      height: 35px;
+      background-color: hsl(245, 75%, 52%);
+      box-shadow: 0px 15px 20px hsl(245deg 75% 52% / 18%);
+      color: white;
+      margin-bottom: 20px;
+      border: none;
+    }
+    .cancel-btn{
+      font-size: 14px;
+      opacity: 0.65;
+      font-weight: 600;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card-container">
+      <img class="card-img" src="./images/illustration-hero.svg">
+      <div class="container-details">
+        <h2 class="order-name">
+          Order Summary
+        </h2>
+        <span class="order-details">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </span>
+        <div class="price-details">
+          <img class="icon-music" src="./images/icon-music.svg">
+          <div class="price-container">
+              <div class="price-card">
+                <h5 class="Annual-Plan">Annual Plan</h5>
+                <span class="price">$59.99/year</span>
+              </div>
+              <div class="changes-container">
+                <a href="#" class="Change">Change</a>
+              </div>
+              
+          </div>
+          
+        </div>
+        <button class="payment-btn" >Proceed to Payment</button>
+        <a class="cancel-btn">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
